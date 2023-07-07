@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}{% endblock %}
+
+{% block body %}
+
+    <div id="content">
+
+        <p>Log in! - Chat App</p>
+        <br>
+        <form action="/login/" method="POST">
+            <label>Username: </label>
+            <input type="text" name="username" id="content">
+            <br>
+            <label>Password: </label>
+            <input type="text" name="password" id="content">
+            <br>
+            <input type="submit" value="Sign in">
+            <a href="/register/"> Register</a>
+        </form>
+
+    </div>
+
+{% endblock %}
